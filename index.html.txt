@@ -1,0 +1,157 @@
+﻿<DOCTYPE html>
+<html lang=”en-US”>
+<head>
+<title>Learning to Develop Websites</title>
+<style> 
+* {
+    box-sizing: border-box;
+    }
+    
+body {
+       	font-family: 'Arial';
+		margin: 5% 10% 0% 10%;
+        background-color: #e0fcff;
+	}
+    
+#header {
+	text-decoration: underline;
+    border: 5px solid blue;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    padding-left: 5px;
+	}
+    
+.resourcesreview {
+	display:flex;
+    flex-direction: row;
+   	}
+    
+/* Class for buttons*/
+.button {
+    background-color: green;
+    border: outset;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+}
+    
+/* The grid: Three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.containerTab {
+    padding: 15px;
+    color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<div class-"projectnotes">
+	<h1 align=center> Learning to Develop Websites<hr></h1>
+		<a href="https://20ndavis76089.weebly.com" target="_blank" class="button">
+			My Weebly
+		</a>        
+	<h3 id="header">20% Project Notes</h3>
+        <a href="https://docs.google.com/document/d/1y-OY32AbbjxcupnOcscS3DlZNOjJbUSfrD-3ZRVviqc/edit?usp=sharin" target="_blank" class="button">
+			HTML Notes
+		</a>
+        <a href="https://docs.google.com/document/d/1lM_rPcPHd3L454M1kvzspWzYY6AcqOX7CB4zS1om12I/edit?usp=sharing" target="_blank" class="button">
+			CSS Notes
+		</a>
+        <a href="https://docs.google.com/document/d/1DVtzscvJU4oZ6QqIdiPvH8lPBRb_oCQRi36gaRGeIP4/edit?usp=sharing" target="_blank" class="button">
+			JavaScript Notes
+		</a>
+</div>
+
+<div class-"resourcesreview">
+    <h3 id="header"> Useful Learning Platforms and Resources </h3>
+<!-- Creates the boxes you click on -->
+	<div class="row">
+  		<div class="column" onclick="openTab('b1');" style="background:#a5a21a;">
+    		Code
+ 		 </div>
+ 	 	<div class="column" onclick="openTab('b2');" style="background:#2a8aba;">
+  			SoloLearn
+    	</div>
+ 	 	<div class="column" onclick="openTab('b3');" style="background:#51cc24;">
+    		W3Schools
+  		</div>
+	</div>
+    
+<!-- Boxes that appear once their corresponding one is clicked -->
+	<div id="b1" class="containerTab" style="display:none;background:#a5a21a">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		<h2>Code: The Hidden Language of Computer Hardware and Software</h2>
+	<img src="https://images-na.ssl-images-amazon.com/images/I/310WZuKyEUL._SX334_BO1,204,203,200_.jpg" width="100px" height="160" style="float:right";>
+  	<p style="padding-bottom: 6%";>
+ 	 	This book has a very insightful approach to explaining code. While it does not cover any literal computer code until the end of the book, it explains how code works in other ways. It uses relatively old technologies and analogies to explain how computers work. The author explains binary and hexadecimal using techniques that make it easily understandable. I highly recommend it to anyone who wants to start coding.
+  	</p>
+	</div>
+
+	<div id="b2" class="containerTab" style="display:none;background:#2a8aba">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		<h2>SoloLearn</h2>
+	<img src="https://www.sololearn.com/images/fb-story-icon.jpg" width="10%" height="10%" style="float:right";>
+  	<p>
+		SoloLearn is a learning platform which has lessons on many different types of programming languages. It is helpful because you are able to write your own comments on lessons or read comments from others. This makes understanding the lessons much easier as if there is something you do not understand there is likely to be an existing comment that either explains or has a response explaining what you were confused about, and if not you can leave your own comment. It has a progression system organized by units with a quiz at the end for it’s lessons which help you stay on track with what you’re learning. Each lesson is typically composed of half notes and half questions. While the questions are a good idea, they do not do much as they are directly after the notes sections and you can just go back to the notes page to get the answer. You can also get a hint on questions using SoloLearn’s XP system which you get for finishing a lesson. I dislike this feature because it does not help you learn but it is entirely avoidable. Overall most of SoloLearn’s lessons are great, however some are outdated and a few are hard to understand. The comments left by other users are usually more helpful in these cases than the actual lesson. 
+  	</p>
+	</div>
+
+	<div id="b3" class="containerTab" style="display:none;background:#51cc24">
+		<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+		<h2>W3Schools</h2>
+	<img src="https://qph.fs.quoracdn.net/main-qimg-611ed3c77d17db7551e3a6c568cfe481-c" width="10%" height="10%" style="float:right";>
+  	<p style="padding-bottom: 2%";>
+		W3Schools is an online learning platform which teaches programming languages used for creating website. It has lessons on every aspect of these languages, at least from the ones I’ve been learning. The lessons on W3Schools are very easy to understand and are very descriptive. You can go through any of these lessons in any order you would like but just continuing through them all brings you through them in an order that is easy to understand. The lessons are more in depth than the ones on SoloLearn.
+  	</p>
+	</div>
+<!--- Display text for each box --->
+	<script>
+		function openTab(tabName) {
+			var i, x;
+			x = document.getElementsByClassName("containerTab");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			document.getElementById(tabName).style.display = "block";
+		}
+	</script>
+    <h3 id="header";>Overall Thoughts</h3>
+    <p>
+    	In terms of just lessons I would highly recommend W3Schools over SoloLearn, but the comments and responses of others on SoloLearn are very helpfull. While all of the W3Schools lessons are well organized, easy to understand and up to date, seeing what other people have to say is extremely helpful and is why I would recommend SoloLearn. If I had to learn HTML, CSS and JavaScript again I would try learning from SoloLearn and also go over the W3Schools lessons if I did not understand one from SoloLearn. I would recommend the book Code no matter how you learn.  
+    </p>    
+	</div>
+</body>
+</html>
+
+
+
+
